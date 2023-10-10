@@ -19,7 +19,8 @@
     --fs-sm: 1.4rem;
     --fs-md: 1.6rem;
     --fs-lg: 2rem;
-    --fs-xl: clamp(2.4rem, 5vw, 4.2rem);
+    --fs-xl: 2.4rem;
+    --fs-xxl: clamp(2.4rem, 5vw, 4.2rem);
     --fs-biggest: clamp(3.2re, 5vw, 5.8rem);
     /* font weight */
     --fw-regular: 400;
@@ -87,8 +88,70 @@ main{
 }
 body{
     font-family: var(--font-family-primary);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-regular);
+    color: var(--color-gray);
+    margin-top: var(--height-header);
 }
 
 /* Reausable CSS Classes */
+.container{
+    width: 90%;
+    max-width: var(--width-container);
+    margin: auto;
+}
 
+.section{
+    padding: 12rem 0;
+}
+
+.section-bg{
+    background-color: var(--color-gray-lighten);
+}
+
+.section__header{
+    max-width: 50rem;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.section__title{
+    font-size: var(--fs-xxl);
+    margin: 0.5rem 0 1.5rem;
+}
+
+.section__subtitle{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-md);
+    color: var(--color-primary);
+}
+
+.d-grid{
+    display: grid;
+    gap: 3rem;
+}
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.8rem 3rem;
+    border-radius: var(--b-radius);
+    color: var(--color-white);
+    font-weight: var(--fw-medium);
+    transition: var(--transition);
+}
+
+.btn i {
+    font-size: 2rem;
+}
+
+.btn--primary{
+    background-color: var(--color-primary);
+}
+
+.btn--primary:hover{
+    background-color: var(--color-primary-dark);
+}
 /* Header */
