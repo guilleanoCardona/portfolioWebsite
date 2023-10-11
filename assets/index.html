@@ -14,48 +14,48 @@
     <!-- SwiperJs -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <!-- Header -->
     <header id="header" class="header">
-        <main class="nav container">
-            <a href="index.html" class="nav__brand"></a>
+        <nav class="nav container">
+            <a href="index.html" class="nav__brand">Guilleano.</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class="ri-home-line"></i>
+                        <a href="#home" class="nav__link">
+                            <i class="ri-home-line nav__icon"></i>
                             Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class="ri-user-line"></i>
+                        <a href="#about" class="nav__link">
+                            <i class="ri-user-line nav__icon"></i>
                             About Me</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class="ri-medal-line"></i>
+                        <a href="#skill" class="nav__link">
+                            <i class="ri-medal-line nav__icon"></i>
                             Skills</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class="ri-briefcase-line"></i>
+                        <a href="#service" class="nav__link">
+                            <i class="ri-briefcase-line nav__icon"></i>
                             Services</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class="ri-folders-line"></i>
+                        <a href="#portfolio" class="nav__link">
+                            <i class="ri-folders-line nav__icon"></i>
                             Portfolio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class="ri-message-line"></i>
+                        <a href="#blog" class="nav__link">
+                            <i class="ri-message-line nav__icon"></i>
                             Blog</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class="ri-folders-line"></i>
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-folders-line nav__icon"></i>
                             Contact</a>
                     </li>
                 </ul>
@@ -65,15 +65,54 @@
                     <i id="theme-toogle" class="ri-moon-line"></i>
                 </span>
                 <span class="nav__toogle">
-                    <i id="nav-toogle" class="ri-menu-4-fill"></i>
+                    <i id="nav-toogle" class="ri-menu-4-line"></i>
                 </span>
             </div>
-        </main>
+        </nav>
     </header>
     <!-- Main -->
     <main class="main">
         <!-- Home -->
-        <section id="home" class="home"></section>
+        <section id="home" class="home">
+            <div class="d-grid home__wrapper container">
+                <div class="home__content">
+                    <h1 class="home__title">
+                        I Am <span class="home__name">Guilleano</span><br>
+                        UI/UX Designer<br>
+                        & Developer
+                    </h1>
+                    <p class="home__description">
+                        Lavulis eget elementum felis pellentesque tellus tincidunt
+                        tortor natoque. Cras amet ornare egestas
+                    </p>
+                    <a href="#contact" class="btn btn--primary">
+                        <i class="ri-mail-line"></i>
+                        Hire Me
+                    </a>
+                    <div class="social">
+                        <span class="social__list">Follow me</span>
+                        <ul class="social__title">
+                            <li class="social__item">
+                                <a href="javascript:void(0)" class="social__link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="javascript:void(0)" class="social__link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="javascript:void(0)" class="social__link">
+                                    <i class="ri-dribbble-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="./img/home.png" alt="Guilleano Cardona" class="home__img">
+            </div>
+        </section>
         <!-- About Me -->
         <section id="about" class="about section"></section>
         <!-- Skills -->
@@ -89,6 +128,6 @@
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Main Js -->
-    <script src="assets/js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
