@@ -84,3 +84,55 @@ const TestimonialSwiper = new Swiper(".testimonial__wrapper", {
     clickable: true,
   },
 });
+
+// Scrolltop
+const scrolltop = document.getElementById("scrolltop");
+
+window.addEventListener("scroll", () => {
+  if (this.scrollY >= 300) {
+    scrolltop.classList.add("scrolltop--show");
+  } else {
+    scrolltop.classList.remove("scrolltop--show");
+  }
+});
+
+// Dark Theme
+
+// check for selected theme in localStorage
+let theme = localStorage.getItem("theme");
+
+const themeToggle = document.getElementById("theme-toggle");
+
+const enableDarkTheme = () => {
+  // Add the dark theme class to the body
+  document.body.classList.add("dark-theme");
+  // change the theme toggle icon
+  themeToggle.classList.replace("ri-moon-line", "ri-sun-line");
+  // update the selected theme in localStorage
+  localStorage.setItem("theme", "dark-theme");
+};
+
+const disableDarkTheme = () => {
+  // Add the dark theme class to the body
+  document.body.classList.remove("dark-theme");
+  // change the theme toggle icon
+  themeToggle.classList.replace("ri-sun-line", "ri-moon-line");
+  // update the selected theme in localStorage
+  localStorage.setItem("theme", null);
+};
+
+// check if the user previously enables the dark theme
+// to load the dark theme
+if (theme === "dark-theme") {
+  enableDarkTheme();
+}
+
+themeToggle.addEventListener("click", () => {
+  // get the selected theme
+  theme = localStorage.getItem("theme");
+  if (theme !== "dark-theme") {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
+  }
+});
