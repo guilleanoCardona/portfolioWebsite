@@ -9,7 +9,7 @@
     --color-gray-light: #b8bbc7;
     --color-gray-lighten: #f6f8fe;
     --color-white: #fff;
-    --color-title: #39426d;
+    --color-title: #303658;
     --color-border: #2b3142;
 
     /* Font & Typography */
@@ -232,7 +232,7 @@ body{
 }
 
 .nav__brand {
-    color: var(--color-primary-dark);
+    color: var(--color-title);
     font-size: var(--fs-lg);
     font-weight: var(--fw-bold);
 }
@@ -246,13 +246,13 @@ body{
     transition: var(--transition);
 }
 
-.theme__toogle,
-.nav__toogle{
+.theme__toggle,
+.nav__toggle{
     cursor: pointer;
 }
 
-.theme__toogle:hover,
-.nav__toogle:hover{
+.theme__toggle:hover,
+.nav__toggle:hover{
     color: var(--color-primary);
 }
 
@@ -455,7 +455,7 @@ body{
     transition: var(--transition);
 }
 
-.skills__card:hover , .skills__name {
+.skills__card:hover, .skills__name {
     color: var(--color-primary);
 }
 
@@ -595,7 +595,7 @@ body{
 }
 
 .portfolio__link:hover {
-    border-color: var(--color-primary);
+    background-color: var(--color-primary);
     color: var(--color-white);
 }
 
@@ -611,7 +611,7 @@ body{
 }
 
 .portfolio__project:hover .portfolio__overlay {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .portfolio__project:hover .portfolio__info {
@@ -1014,7 +1014,7 @@ body{
         column-gap: 4rem;
     }
 
-    .nav__toogle,
+    .nav__toggle,
     .nav__icon {
         display: none;
     }

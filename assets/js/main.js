@@ -1,5 +1,5 @@
 const navMenu = document.getElementById("nav-menu"),
-  navToogle = document.getElementById("nav-toogle"),
+  navToogle = document.getElementById("nav-toggle"),
   navLinks = document.querySelectorAll(".nav__link");
 
 navToogle.addEventListener("click", () => {
@@ -44,7 +44,7 @@ function addActiveLink() {
   });
 }
 
-window.addEventListener("scroll", () => {});
+window.addEventListener("scroll", addActiveLink);
 
 // increment counter
 function startCounter(counter) {
@@ -136,3 +136,27 @@ themeToggle.addEventListener("click", () => {
     disableDarkTheme();
   }
 });
+
+// ScrollReveal Animations
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "100px",
+  duration: 2500,
+  reset: true,
+});
+
+sr.reveal(".home__content, .about__img, .service__content, .contact__content", {
+  origin: "left",
+});
+
+sr.reveal(".home__img, .about__content, .service__info, .contact__form", {
+  origin: "right",
+});
+
+sr.reveal(
+  ".skills__wrapper, .counter__wrapper, .portfolio__wrapper, .testimonial__wrapper, .blog__wrapper, .footer__content",
+  {
+    origin: "bottom",
+  }
+);
