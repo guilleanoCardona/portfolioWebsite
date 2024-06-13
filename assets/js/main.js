@@ -159,3 +159,10 @@ sr.reveal(
     origin: "bottom",
   }
 );
+
+/* let link = document.createElement("link");
+link.type = "text/css";
+link.rel = "stylesheet";
+link.href = "http://127.0.0.1:5500/assets/css/style.css";
+
+document.querySelector("head").appendChild(link) */

@@ -500,8 +500,8 @@
                 <h2 class="section__title">Have a Project Idea? Feel Free to Contact</h2>
             </div>
             <div class="d-grid contact__wrapper container">
-                <!-- <form action="https://formsubmit.co/guilleano@gmail.com" method="POST"> -->
-                <form action="https://getform.io/f/zbxdkweb" method="POST">
+                <form action="https://formsubmit.co/guilleano@gmail.com" method="POST">
+                <!-- <form action="./php/enviar_correo.php" method="POST"> -->
                     <div class="form__group">
                         <label for="nombre" class="form__label">Nombre
                         </label>
@@ -517,7 +517,9 @@
                         </label>
                         <textarea class="form__input form__textarea" name="mensaje" id="mensaje" placeholder="Tell me about your project"></textarea>
                     </div>
-                    <button type="submit" class="btn btn--primary">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit" class="btn btn--primary" value="mail">
                         <i class="ri-send-plane-line"></i>Enviar Mensaje
                     </button>
                 </form>
@@ -619,5 +621,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Main Js -->
     <script src="./js/main.js"></script>
+    <!-- Method PHP -->
+    <!-- <script src="./php/enviar_correo.php"></script> -->
 </body>
 </html>

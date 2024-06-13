@@ -6,8 +6,8 @@
     --color-primary-lighten: #184275;
     /* --color-primary-lighten: #b6c0fa; */
     --color-gradient: linear-gradient(121.77deg, #4144fb 13.51%, #1417e8 174.68%);
-    --color-secondary: #212736;
-    --color-secondary-dark: #1d2230;
+    --color-secondary: #444b5e;
+    --color-secondary-dark: #444b5e;
     /* --color-secondary-dark: #393f50; */
     /* --color-gray: #747474; */
     --color-gray: #656868;
@@ -41,8 +41,8 @@
     --height-header--scroll: 8rem;
     /* Transition and box shadow */
     --transition: 0.3s ease-in-out;
-    --shadow-primary: 0 0 85px 0 #e9eefc;
-    --shadow-secondary: 0px 30px 60px 2px rgba(0,0,0, 0.1);
+    --shadow-primary: 0 0 55px 0 #e9eefc;
+    --shadow-secondary: 10px 20px 20px 2px rgba(202, 202, 202, 0.1);
     --shadow-header: 0px 2px 5px rgba(0,0,0, 0.05);
     /* Border radius */
     --b-radius: 1.5rem;
@@ -81,6 +81,7 @@ input, textarea, button{
     outline: none;
 }
 button{
+    margin-top: 10px;
     cursor: pointer;
     border: none;
 }
@@ -114,7 +115,7 @@ body{
 }
 
 .dark-theme .section-bg {
-    background-color: var(--color-secondary-dark);
+    background-color: #184275;
 }
 
 .dark-theme .nav__menu {
@@ -129,10 +130,19 @@ body{
 .dark-theme .skills__card,
 .dark-theme .service__card,
 .dark-theme .blog__post,
+.dark-theme .blog__category,
 .dark-theme .testimonial__card,
 .dark-theme .form__input {
     background-color: var(--color-secondary);
-    box-shadow: none;
+    box-shadow: #c7a253;
+}
+
+.dark-theme .contact__content {
+    background: linear-gradient(to bottom, #184275, #656868);
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+    border: 1px solid white;
+    box-shadow: 10px 5px 10px rgba(161, 59, 59, 0.09);
 }
 
 .dark-theme .service__icon {
@@ -157,7 +167,7 @@ body{
 
 /* Reausable CSS Classes */
 .container{
-    width: 90%;
+    width: 100%;
     max-width: var(--width-container);
     margin: auto;
 }
@@ -246,6 +256,7 @@ body{
 .nav__buttons{
     display: flex;
     align-items: center;
+    
     gap: 2rem;
     font-size: 2rem;
     color: var(--color-title);
@@ -372,7 +383,10 @@ body{
 }
 
 .social__link:hover {
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    transform: scale(1.2);
+    /* transform: rotateY(360deg); */
+    background-color: #184275;
     color: var(--color-white);
 }
 
@@ -412,6 +426,7 @@ body{
     font-weight: var(--fw-semibold);
     text-align: center;
     margin-bottom: 5rem;
+    
 }
 
 .skills__content-wrapper {
@@ -434,7 +449,7 @@ body{
 }
 
 .skills__card:hover {
-    box-shadow: var(--shadow-secondary);
+    box-shadow: var(--shadow-primary);
     transform: scale(1.1);
 }
 
@@ -462,7 +477,7 @@ body{
 }
 
 .skills__card:hover, .skills__name {
-    color: var(--color-primary);
+    color: var(--color-title);
 }
 
 /* Counter */
@@ -527,7 +542,8 @@ body{
 }
 
 .service__card:hover {
-    box-shadow: var(--shadow-secondary);
+    box-shadow: var(--shadow-primary);
+    transform: translateY(-0.5rem);
 }
 
 .service__icon {
@@ -640,6 +656,7 @@ body{
     justify-self: center;
     border-radius: var(--b-radius);
     padding: 5rem 3rem;
+    margin-top: 3rem;
     position: relative;
 }
 
@@ -694,10 +711,10 @@ body{
 }
 
 .testimonial__wrapper .swiper-pagination-bullet {
-    background-color: var(--color-gray);
+    background-color: var(--color-title);
     border-radius: 50%;
-    width: 0.8rem;
-    height: 0.8rem;
+    width:  0.9rem;
+    height: 0.9rem;
 }
 
 .testimonial__wrapper .swiper-pagination-bullet-active {
@@ -725,6 +742,7 @@ body{
     left: 2rem;
     background-color: var(--color-primary-lighten);
     color: var(--color-primary);
+    /* color: var(--color-title); */
     font-weight: var(--fw-medium);
     font-size: var(--fs-sm);
     padding: 1rem;
@@ -779,6 +797,7 @@ body{
 
 .form__label {
     display: block;
+    font-weight: 900;
     margin-bottom: 1rem;
 }
 
@@ -906,7 +925,8 @@ body{
     position: fixed;
     bottom: -100%;
     left: 2rem;
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    background-color: #184275;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
