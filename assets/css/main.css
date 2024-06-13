@@ -1,13 +1,18 @@
 :root{
     --color-primary: #4964fe;
-    --color-primary-dark: #1a16ff;
-    --color-primary-lighten: #b6c0fa;
+    /* --color-primary: #184275; */
+    /* --color-primary-dark: #1a16ff; */
+    --color-primary-dark: #184275;
+    --color-primary-lighten: #184275;
+    /* --color-primary-lighten: #b6c0fa; */
     --color-gradient: linear-gradient(121.77deg, #4144fb 13.51%, #1417e8 174.68%);
     --color-secondary: #212736;
     --color-secondary-dark: #1d2230;
-    --color-gray: #747474;
+    /* --color-secondary-dark: #393f50; */
+    /* --color-gray: #747474; */
+    --color-gray: #656868;
     --color-gray-light: #b8bbc7;
-    --color-gray-lighten: #f6f8fe;
+    --color-gray-lighten: #cccfd8;
     --color-white: #fff;
     --color-title: #303658;
     --color-border: #2b3142;
@@ -35,7 +40,7 @@
     --height-header: 8rem;
     --height-header--scroll: 8rem;
     /* Transition and box shadow */
-    --transition: 0.4s ease-in-out;
+    --transition: 0.3s ease-in-out;
     --shadow-primary: 0 0 85px 0 #e9eefc;
     --shadow-secondary: 0px 30px 60px 2px rgba(0,0,0, 0.1);
     --shadow-header: 0px 2px 5px rgba(0,0,0, 0.05);
@@ -180,7 +185,8 @@ body{
 .section__subtitle{
     font-weight: var(--fw-bold);
     font-size: var(--fs-md);
-    color: var(--color-primary);
+    color: var(--color-title);
+    /* color: var(--color-primary); */
 }
 
 .d-grid{
@@ -462,7 +468,9 @@ body{
 /* Counter */
 
 .counter__wrapper {
-    background: var(--color-primary) var(--color-gradient);
+    /* background: var(--color-primary) var(--color-gradient); */
+    /* background: #184275; */
+    background: linear-gradient(to bottom, #184275, #656868);
     padding: 5rem;
     border-radius: var(--b-radius);
     row-gap: 5rem;
@@ -803,7 +811,8 @@ body{
 }
 
 .contact__content {
-    background: var(--color-primary) var(--color-gradient);
+    background: linear-gradient(to right, #184275, #656868);
+   /*  background: var(--color-primary) var(--color-gradient); */
     padding: 5rem 3rem;
     width: 100%;
     max-width: 40rem;
@@ -896,10 +905,10 @@ body{
 .scrolltop {
     position: fixed;
     bottom: -100%;
-    left: 5rem;
+    left: 2rem;
     background-color: var(--color-primary);
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -913,11 +922,11 @@ body{
 
 .static-whatsapp {
     position: fixed;
-    bottom: 5rem;
-    right: 5rem;
+    right: 2rem;
+    bottom: 2rem;
     background-color: green;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -931,7 +940,7 @@ body{
 }
 
 .scrolltop--show {
-    bottom: 5rem;
+    bottom: 2rem;
     visibility: visible;
 }
 
@@ -941,7 +950,7 @@ body{
     }
 
     100% {
-        box-shadow: 0px 0px 0px 40px rgb(113 67 245 / 1%);
+        box-shadow: 0px 0px 0px 25px rgb(113 67 245 / 1%);
     }
 }
 
@@ -951,7 +960,7 @@ body{
     }
 
     100% {
-        box-shadow: 0px 0px 0px 40px rgb(113 67 245 / 1%);
+        box-shadow: 0px 0px 0px 25px rgb(113 67 245 / 1%);
     }
 }
 

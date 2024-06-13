@@ -142,7 +142,7 @@ themeToggle.addEventListener("click", () => {
 const sr = ScrollReveal({
   origin: "top",
   distance: "100px",
-  duration: 2500,
+  duration: 1500,
   reset: true,
 });
 
@@ -155,8 +155,7 @@ sr.reveal(".home__img, .about__content, .service__info, .contact__form", {
 });
 
 sr.reveal(
-  ".skills__wrapper, .counter__wrapper, .portfolio__wrapper, .testimonial__wrapper, .blog__wrapper, .footer__content",
-  {
+  ".skills__wrapper, .counter__wrapper, .portfolio__wrapper, .testimonial__wrapper, .blog__wrapper, .footer__content", {
     origin: "bottom",
   }
 );
