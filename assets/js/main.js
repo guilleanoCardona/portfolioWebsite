@@ -160,6 +160,98 @@ sr.reveal(
   }
 );
 
+function loading() {
+  const box = document.querySelectorAll(".box");
+  box.forEach((box) => {
+    box.classList.add("box-anim");
+  });
+
+  // const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
+
+  // var interval = 100;
+  let cont = 0;
+  /* box[0].style.animation = "box-anim";
+  box[1].style.animation = "box-anim";
+  box[2].style.animation = "box-anim"; */
+  /* let interval = setInterval(() => {
+    cont++;
+    console.log(cont)
+    if (cont == 10) {
+      box[index].style.animation = "";
+      clearInterval(interval);
+    }
+  }, 1000);  */
+  setTimeout(() => {
+    cont++;
+    console.log(cont)
+    if (cont == 1) {
+      box.forEach((box) => {
+        box.classList.remove("box-anim");
+      });
+    }
+  }, 6000);
+  /* box.forEach(function (item, index) {
+    setTimeout(async function () {
+      box[index].style.animation = "loading_anim 1s cubic-bezier(0,.59,.37,1)";
+      await sleep(1000);
+      box[index].style.animation = "";
+    }, index * interval);
+  }); */
+};
+
+function sendEmail() {
+  const btn = document.getElementById('button');
+  const box = document.querySelectorAll(".box");
+
+  if (document.getElementById("name").value == "" ||
+    document.getElementById("email").value == "" ||
+    document.getElementById("messaje").value == "") {
+    return false
+  } else {
+    box.forEach((box) => {
+      box.classList.add("box-anim");
+    });
+  }
+  document.getElementById('contact-form')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
+      let cont = 0;
+      //btn.value = `Enviando ...`;
+
+      const serviceID = 'default_service';
+      const templateID = 'template_imrut56';
+
+
+      //loading();
+      /* let interval = setInterval(loading, () => {
+        cont++;
+        console.log(cont)
+        if (cont == 10) {
+          clearInterval(interval);
+        }
+      }, 1000); */
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          // btn.value = 'Enviar correo electrónico';
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("messaje").value = "";
+          setTimeout(() => {
+            cont++;
+            if (cont == 1) {
+              box.forEach((box) => {
+                box.classList.remove("box-anim");
+              });
+            }
+          }, 800);
+        }, (err) => {
+          btn.value = 'Enviar correo electrónico';
+          alert(JSON.stringify(err));
+        });
+      //setInterval(loading, 1750);
+    });
+}
+
 /* let link = document.createElement("link");
 link.type = "text/css";
 link.rel = "stylesheet";

@@ -1,4 +1,9 @@
 :root{
+    --lightblk: #1e2124;
+    --blk: #18191a;
+    --blue: 0, 255, 238;
+    --bg: #111417;
+    --white: #fff;
     --color-primary: #4964fe;
     /* --color-primary: #184275; */
     /* --color-primary-dark: #1a16ff; */
@@ -83,7 +88,7 @@ input, textarea, button{
 button{
     margin-top: 10px;
     cursor: pointer;
-    border: none;
+    border: 1 px solid white;
 }
 a{
     text-decoration: none;
@@ -134,6 +139,7 @@ body{
 .dark-theme .testimonial__card,
 .dark-theme .form__input {
     background-color: var(--color-secondary);
+    color: var(--color-title);
     box-shadow: #c7a253;
 }
 
@@ -147,6 +153,10 @@ body{
 
 .dark-theme .service__icon {
     background-color: var(--color-secondary-dark);
+}
+
+.dark-theme .lets-talk {
+    border: 1px solid white;
 }
 
 .dark-theme .blog__post {
@@ -256,11 +266,95 @@ body{
 .nav__buttons{
     display: flex;
     align-items: center;
-    
     gap: 2rem;
     font-size: 2rem;
     color: var(--color-title);
     transition: var(--transition);
+}
+
+.send-email{
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1 px solid white;
+}
+
+.box {
+    position: relative;
+    border-radius: 100%;
+    background-color: var(--white);
+    height: 8px;
+    width: 8px;
+    transition: 0.5s ease-in-out;
+    /* animation: leap 1s infinite; */
+    /* animation: loading_anim 1s cubic-bezier(0,.59,.37,1); */
+}
+
+.box-anim {
+    animation: leap 1s infinite;
+}
+
+.txt {
+    display: none;
+    color: var(--lightblk);
+    font-family: "Red Hat Text";
+    font-weight: 700;
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.loader {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 50px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+@keyframes leap {
+	50% {transform: translateY(-15px)}
+	100% {transform: translateY(0px)}
+}
+
+.box:nth-child(1) {
+	/* background-color: #aa40ec; */
+    background-color: white;
+	box-shadow: 0px 0px 5px 0.1px rgba(20,20,20,0.6);
+}
+
+.box:nth-child(2) {
+	/* background-color: #ff9ffd; */
+    background-color: white;
+	animation-delay: .15s;
+	box-shadow: 0px 0px 5px 0.1px rgba(20,20,20,0.6);
+}
+
+.box:nth-child(3) {
+	/* background-color: #30ffff; */
+    background-color: white;
+	animation-delay: .3s;
+	box-shadow: 0px 0px 5px 0.1px rgba(20,20,20,0.6);
+}
+
+@keyframes loading_anim {
+    0% {
+      /* background-color: var(--lightblk); */
+      background-color: white;
+      filter: drop-shadow(0px 0px 0rem rgba(var(--blue), 0.8));
+    }
+    50% {
+      transform: translate(0px, -15px);
+      background-color: white;
+      filter: drop-shadow(0px 0px 1rem rgba(var(--blue), 0.8)) saturate(4);
+    }
+    100% {
+      /* background-color: var(--lightblk); */
+      background-color: white;
+      filter: drop-shadow(0px 0px 0rem rgba(var(--blue), 0.8));
+    }
 }
 
 .theme__toggle,
@@ -938,6 +1032,7 @@ body{
     transition: var(--transition);
     animation: scrolltopAnimation 2s linear infinite;
     z-index: var(--zindex-fixed);
+    border: 1px solid white;
 }
 
 .static-whatsapp {
