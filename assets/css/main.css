@@ -140,7 +140,7 @@ body{
 .dark-theme .form__input {
     background-color: var(--color-secondary);
     color: var(--color-title);
-    box-shadow: #c7a253;
+    box-shadow: #423f37;
 }
 
 .dark-theme .contact__content {
@@ -183,8 +183,13 @@ body{
 }
 
 .section{
+    /* position: relative; */
     padding: 5rem 0;
 }
+
+/* .section__initial{
+    padding: 0.1rem 0;
+} */
 
 .section-bg{
     /* padding: 12rem 0; */
@@ -196,6 +201,13 @@ body{
     margin: auto;
     text-align: center;
     padding: 2rem 0;
+}
+.section__header__wel{
+    max-width: 100rem;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 30px;
 }
 
 .section__header__services{
@@ -247,7 +259,12 @@ body{
 }
 
 .initial__img{
-    width: 4rem;
+    width: 7rem;
+}
+.home__img{
+    border-radius: 50%;
+    width:  80%;
+    height: 80%;
 }
 /* Header */
 .header{
@@ -268,6 +285,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    /* background-image: url("../img/barranquillaFoto.jpeg"); */
 }
 
 .nav__brand {
@@ -421,8 +439,14 @@ body{
         gap: 2rem;
     }
     .initial__img{
-        width: 4rem;
+        width: 7rem;
         margin-left: 15px;
+    }
+
+    .home__img{
+        border-radius: 50%;
+        width: 80%;
+        height: 80%;
     }
 
     .nav__link {
@@ -446,16 +470,39 @@ body{
 }
 
 /* Home */
+/* .home {
+    background-image: url("../img/barranquillaFoto.jpeg");
+    background-color: transparent;
+    background-repeat: no-repeat, repeat;
+} */
+.image__barranquilla {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/barranquillaFoto.jpeg");
+    opacity: 0.5;
+    /* background-repeat: no-repeat, repeat; */
+    background-size: 100%;
+    /* object-fit: cover; */
+ }
 .home__wrapper{
     min-height: calc(100vh - var(--height-header));
     align-content: center;
     justify-items: center;
     padding-top: 5rem;
+    /* background-image: url("../img/barranquillaFoto.jpeg"); */
+    /* opacity: 0.6; */
+   /*  background-color: rgba(255, 255, 255, 0.6); */
+    /* background-color: transparent; */
+    /* background-repeat: no-repeat, repeat; */
 }
 
 .home__content{
     padding: 0 1rem;
-    max-width: 50rem;
+    /* max-width: 50rem; */
     text-align: center;
 }
 
@@ -466,6 +513,7 @@ body{
 
 .home__description{
     /* padding: 0 1rem; */
+    font-weight: 700;
     text-align: justify;
     margin-bottom: 3rem;
 }
@@ -515,7 +563,9 @@ body{
         margin-left: 15px;
     }
     .home__img{
-        width: 28rem;
+        border-radius: 50%;
+        width: 50%;
+        height: 50%;
     }
 }
 /* About */
@@ -621,11 +671,21 @@ body{
 }
 
 /* Counter */
+.counter {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    padding: 2rem 0;
+    /* border-radius: var(--b-radius);
+    box-shadow: var(--shadow-primary);
+    transition: var(--transition); */
+    }
 
 .counter__wrapper {
     /* background: var(--color-primary) var(--color-gradient); */
-    /* background: #184275; */
-    background: linear-gradient(to bottom, #184275, #656868);
+    background: #184275;
+    /* background: linear-gradient(to bottom, #184275, #656868); */
     padding: 5rem;
     border-radius: var(--b-radius);
     row-gap: 5rem;
@@ -669,7 +729,8 @@ body{
 
 .service__card {
     border-color: var(--color-white);
-    box-shadow: var(--shadow-primary);
+    /* box-shadow: var(--shadow-primary); */
+    box-shadow: 0 0 55px 0 #a8a8a8;
     width: 100%;
     max-width: 70rem;
     padding: 2rem 3rem;
@@ -954,7 +1015,7 @@ body{
 .form__input {
     background-color: var(--color-white);
     box-shadow: var(--shadow-primary);
-    border: 0.1rem solid transparent;
+    border: 0.1rem solid;/* transparent */
     width: 100%;
     padding: 1.8rem 2.5rem;
     border-radius: var(--b-radius);
@@ -980,8 +1041,8 @@ body{
 }
 
 .contact__content {
-    background: linear-gradient(to right, #184275, #656868);
-   /*  background: var(--color-primary) var(--color-gradient); */
+    /* background: linear-gradient(to right, #184275, #656868); */
+    background: #184275;
     padding: 5rem 3rem;
     width: 100%;
     max-width: 40rem;
@@ -1016,6 +1077,10 @@ body{
 
 .contact__description {
     color: var(--color-gray-lighten);
+}
+
+.btn__blue {
+    background-color: #184275;
 }
 
 /* Footer */
@@ -1059,7 +1124,7 @@ body{
 }
 
 .footer__content .social__link:hover {
-    background-color: var(--color-primary);
+    background-color: #184275;
     color: var(--color-white);
 }
 
@@ -1162,6 +1227,11 @@ body{
         width: 4rem;
         margin-left: 15px;
     }
+    .home__img{
+        border-radius: 50%;
+        width:  50%;
+        height: 50%;
+    }
     .counter__wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1193,6 +1263,11 @@ body{
         width: 4rem;
         margin-left: 15px;
     }
+    .home__img{
+        border-radius: 50%;
+        width:  50%;
+        height: 50%;
+    }
     .counter__wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1214,11 +1289,16 @@ body{
         text-align: justify;
     }
     .initial__img{
-        width: 4rem;
+        width: 7rem;
         margin-left: 15px;
     }
+    .home__img{
+        border-radius: 50%;
+        width:  60%;
+        height: 60%;
+    }
     .home__wrapper {
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
         align-items: center;
     }
 

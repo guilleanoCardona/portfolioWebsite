@@ -82,21 +82,26 @@
     <!-- Main -->
     <main class="main">
         <!-- Home -->
-        <section id="home" class="home section">
+        <section id="home" class="home section__initial">
+            <div class="image__barranquilla">
+                <!-- <img src="../img/barranquillaFoto.jpeg" alt=""> -->
+            </div>
             <div class="d-grid home__wrapper container">
                 <div class="home__content">
-                    <h1 class="home__title">
+                    <!-- <h1 class="home__title">
                         ¡Hola! Te damos la bienvenida a <span class="home__name">Alternativas Legales S.A.S.</span>
-                        <!-- <br>
-                        UI/UX Designer<br>
-                        & Developer -->
-                    </h1>
+                    </h1> -->
+                    <div class="section__header__wel">
+                        <!-- <span class="section__subtitle">Nosotros</span>
+                        <h2 class="section__title">Razones para elegirnos como tu socio legal:</h2> -->
+                        <h1>¡Hola! Te damos la bienvenida a <i class="home__name">Alternativas Legales S.A.S.</i></h1>
+                    </div>
                     <p class="home__description">
                         Somos tu aliado de confianza para encontrar soluciones a la medida de tus necesidades jurídicas.
                         Con más de una década de experiencia, nos destacamos como una firma comprometida en la defensa de tus intereses y dispuesta 
                         a trabajar en la búsqueda de alternativas novedosas para tus desafíos legales.
                     </p>
-                    <a href="#contact" class="btn btn--primary">
+                    <a href="#contact" class="btn btn__blue">
                         <i class="ri-mail-line"></i>
                         Contratame
                     </a>
@@ -121,11 +126,12 @@
                         </ul>
                     </div>
                 </div>
-                <img src="./img/home.png" alt="Guilleano Cardona" class="home__img">
+                <!-- <img src="./img/law-firm.jpg" alt="Guilleano Cardona" class="home__img"> -->
+                <!-- <img src="./img/name-lawyer.jpg" alt="Guilleano Cardona" class="home__img"> -->
             </div>
         </section>
         <!-- About Me -->
-        <section id="about" class="portfolio section-bg">
+        <section id="about" class="portfolio section">
             <div class="section__header container">
                 <span class="section__subtitle">Nosotros</span>
                 <h2 class="section__title">Razones para elegirnos como tu socio legal:</h2>
@@ -359,7 +365,7 @@
             </div>
         </section> -->
         <!-- Counter -->
-        <section class="counter section">
+        <section class="counter section-bg">
             <div class="d-grid counter__wrapper container">
                 <div class="counter__item">
                     <span class="counter__icon">
@@ -393,7 +399,7 @@
         </section>
 
         <!-- Services -->
-        <section class="service section section-bg" id="service">
+        <section class="service section section" id="service">
             <!-- <div class="section__header__services container">
                 <span class="section__subtitle">Mis Servicios</span>
                 <h2 class="section__title">Lo que ofrezco a mis Clientes</h2>
@@ -413,7 +419,7 @@
                         voluptas animi odio autem dolorum molestiae corporis veritatis commodi in ducimus eos quae expedita. 
                         Voluptates molestias nostrum eligendi quod exercitationem maiores repellendus magni, omnis, alias reprehenderit inventore odit minima.
                     </p>
-                    <a href="#contact" class="btn btn--primary lets-talk">
+                    <a href="#contact" class="btn btn__blue lets-talk">
                         <i class="ri-chat-3-line"></i>
                         Hablemos
                     </a>
@@ -523,7 +529,7 @@
             </div>
         </section> -->
 
-        <section id="portfolio" class="testimonial section section">
+        <section id="portfolio" class="testimonial section-bg">
             <div class="section__header container">
                 <span class="section__subtitle">Testimonios</span>
                 <h2 class="section__title">Lo que dicen los clientes sobre Nosotros</h2>
@@ -640,7 +646,7 @@
             </div>
         </section> -->
 
-        <section id="contact" class="contact section section-bg">
+        <section id="contact" class="contact section">
             <div class="section__header container">
                 <span class="section__subtitle">Contactanos</span>
                 <h3 class="section__title">¡Hablemos de tu caso! Estamos aquí para ayudarte.
@@ -661,7 +667,7 @@
                         <label for="messaje" class="form__label">Mensaje</label>
                         <textarea class="form__input form__textarea" type="text" name="message" id="messaje" placeholder="Tell me about your project" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn--primary" value="mail" id="button" onclick="sendEmail()">
+                    <button type="submit" class="btn btn__blue" value="mail" id="button" onclick="sendEmail()">
                         <!-- <i class="ri-send-plane-line"></i> -->Enviar Mensaje
                         <!-- <div class="loader">
                         </div> -->
@@ -678,7 +684,7 @@
                             <i class="ri-phone-line"></i>
                         </div>
                         <div class="contact__info-wrapper">
-                            <h3 class="contact__title">Call:</h3>
+                            <h3 class="contact__title">Llamar:</h3>
                             <p class="contact__description">(+57) 313 500 3443</p>
                         </div>
                     </div>
@@ -698,7 +704,7 @@
                             <i class="ri-map-pin-line"></i>
                         </div>
                         <div class="contact__info-wrapper">
-                            <h3 class="contact__title">Location:</h3>
+                            <h3 class="contact__title">Ubicación:</h3>
                             <p class="contact__description">Soledad - Atlantico</p>
                         </div>
                     </div>
@@ -734,6 +740,23 @@
                         <a href="#contact" class="footer__link">Contact</a>
                     </li>
                 </ul>
+                <!-- <ul class="social__list">
+                    <li class="social__item">
+                        <a href="https://www.facebook.com/" class="social__link">
+                            <i class="ri-facebook-line"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://x.com/" class="social__link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://wa.me/3152893657" class="social__link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </li>
+                </ul> -->
                 <ul class="social__list">
                     <li class="social__item">
                         <a href="https://www.facebook.com/" class="social__link">
