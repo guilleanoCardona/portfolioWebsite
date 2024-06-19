@@ -583,7 +583,7 @@ body{
 
 @media  screen and (max-width: 768px) {
     .initial__img{
-        width: 4rem;
+        width: 7rem;
         margin-left: 15px;
     }
     .home__img{
@@ -1089,7 +1089,7 @@ body{
 .contact__info {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .contact__icon {
@@ -1259,7 +1259,7 @@ body{
         text-align: justify;
     }
     .initial__img{
-        width: 4rem;
+        width: 7rem;
         margin-left: 15px;
     }
     .home__img{
@@ -1300,7 +1300,7 @@ body{
     }
 
     .initial__img{
-        width: 4rem;
+        width: 7rem;
         margin-left: 15px;
     }
     .home__img{
@@ -1420,7 +1420,8 @@ body{
     .nav__link::before {
         position: absolute;
         content: "";
-        background: var(--color-gradient);
+        /* background: var(--color-gradient); */
+        background: #184275;
         width: 100%;
         height: 0.4rem;
         bottom: -3rem;
