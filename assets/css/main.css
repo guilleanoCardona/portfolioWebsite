@@ -204,7 +204,8 @@ body{
 }
 .section__header__wel{
     max-width: 100rem;
-    margin: auto;
+    /* margin: auto; */
+    margin-bottom: 20px;
     text-align: center;
     padding-bottom: 2rem;
     font-size: 30px;
@@ -231,8 +232,8 @@ body{
 }
 
 .section__title__init {
-    font-size: 45px;
-    font-weight: 800;
+    font-size: 40px;
+    font-weight: 900;
     color: #184275;
 }
 
@@ -446,8 +447,8 @@ body{
         gap: 2rem;
     }
     .section__title__init {
-        font-size: 35px;
-        font-weight: 800;
+        font-size: 40px;
+        font-weight: 900;
         color: #184275;
     }
     .initial__img{
@@ -600,8 +601,8 @@ body{
         height: 50%;
     }
     .section__title__init {
-        font-size: 30px;
-        font-weight: 800;
+        font-size: 40px;
+        font-weight: 900;
         color: #184275;
     }
 }
@@ -1294,8 +1295,8 @@ body{
         grid-template-columns: repeat(1, 1fr);
     }
     .section__title__init {
-        font-size: 30px;
-        font-weight: 800;
+        font-size: 35px;
+        font-weight: 900;
         color: #184275;
     }
 }
