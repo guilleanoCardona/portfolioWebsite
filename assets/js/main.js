@@ -55,7 +55,7 @@ function startCounter(counter) {
     if (counter.textContent == targetNumber) {
       clearInterval(increment);
     }
-  }, 2000 / targetNumber);
+  }, 1000 / targetNumber);
 }
 
 const counterSection = document.querySelector(".counter");
@@ -75,7 +75,7 @@ window.addEventListener("scroll", () => {
 
 const TestimonialSwiper = new Swiper(".testimonial__wrapper", {
   spaceBetween: 40,
-  loop: true,
+  loop: false,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
