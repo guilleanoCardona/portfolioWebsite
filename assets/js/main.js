@@ -221,7 +221,6 @@ function sendEmail() {
       const serviceID = 'default_service';
       const templateID = 'template_imrut56';
 
-
       //loading();
       /* let interval = setInterval(loading, () => {
         cont++;

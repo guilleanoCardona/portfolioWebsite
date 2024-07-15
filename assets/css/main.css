@@ -1156,41 +1156,30 @@ body{
     /* animation: fondo-anim 2s linear infinite;
     background-color: #184275; */
     background-color: #184275;
-    /* animation-duration: 1s; 
+    animation-duration: 1.7s; 
     animation-name: cuadro; 
-    animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
 }
 
 @keyframes cuadro{
     0%{
-      width: 300px;
-      background-color:pink;
+        background-color:#3a90f8;
+       }
+    20%{
+        background-color: #317bd4;
+        }
+    40%{
+        background-color:#2b6dbd;
+       }
+    60%{
+        background-color:#2764af;
+       }
+    80%{
+        background-color:#205596;
+       }
+    100%{
+        background-color: #184275;
     }
-      100%{
-      width: 300px;
-      background-color:tomato;
-      } 
-    50%{
-      width: 320px;
-      background-color: green;
-    }
-  }
-
-@keyframes animationContact{
-    from{
-        box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.2),
-                    0px 0px 0px 20px rgba(255,255,255,0.2),
-                    0px 0px 0px 40px rgba(255,255,255,0.2),
-                    0px 0px 0px 60px rgba(255,255,255,0.2),
-                    0px 0px 0px 80px rgba(255,255,255,0.2);
-      }
-      to{
-        box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.2),
-                    0px 0px 0px 40px rgba(255,255,255,0.2),
-                    0px 0px 0px 60px rgba(255,255,255,0.2),
-                    0px 0px 0px 80px rgba(255,255,255,0.2),
-                    0px 0px 0px 100px rgba(255,255,255,0.1);
-      }
 }
 
 .style__contact {
