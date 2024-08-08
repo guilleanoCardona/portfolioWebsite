@@ -254,15 +254,16 @@ body {
 }
 
 .section__header__wel {
-    max-width: 100rem;
+    /* max-width: 100rem; */
     /* margin: auto; */
     /* align-items: center;
     justify-content: center;
     justify-items: center; */
-    margin-bottom: 20px;
+    /* margin: 20px 0; */
     text-align: center;
-    padding-bottom: 2rem;
+    /* padding: 5rem 0; */
     font-size: 30px;
+    margin: 50px 0;
 }
 
 .section__header__services {
@@ -648,6 +649,13 @@ body {
         background: #184275;
         color: var(--color-white);
     }
+
+    /* .social {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+    } */
 }
 
 /* Home */
@@ -690,6 +698,9 @@ body {
     -ms-flex-line-pack: center;
     align-content: center;
     justify-items: center;
+    /*  justify-content: center;
+    align-items: center;
+    text-align: center; */
     /* padding-top: 1rem; */
     /* background-image: url("../img/barranquillaFoto.jpeg"); */
     /* opacity: 0.6; */
@@ -700,8 +711,11 @@ body {
 
 .home__content {
     padding: 0 1rem;
-    /* max-width: 50rem; */
+    height: 63rem;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    position: relative;
 }
 
 .home__title {
@@ -729,17 +743,22 @@ body {
     flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    /* justify-content: left; */
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    gap: 2rem;
+    align-items: flex-end;
+    gap: 0.5rem;
+    height: 100rem;
+    /* position: absolute;
+    bottom: 0;
+    left: 10px; */
 }
 
 .social__title {
     font-size: 18px;
     font-weight: 800;
     color: #FFF;
+    margin-bottom: 10px;
 }
 
 .social__list {
@@ -754,7 +773,7 @@ body {
     align-items: center;
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
-    column-gap: 2rem;
+    column-gap: 1rem;
 }
 
 .social__link {
@@ -805,6 +824,12 @@ body {
         color: #ffffff;
         /* 184275 */
     }
+
+    /* .social {
+        position: absolute;
+        bottom: -200px;
+        left: 10px;
+    } */
 }
 
 /* About */
@@ -1761,6 +1786,12 @@ body {
         font-weight: 900;
         color: #ffffff;
     }
+
+    /* .social {
+        position: absolute;
+        bottom: -260px;
+        left: 10px;
+    } */
 }
 
 @media screen and (min-width: 480px) {
@@ -1800,6 +1831,12 @@ body {
         -ms-grid-columns: (1fr);
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* .social {
+         position: absolute;
+        bottom: -280px;
+        left: 10px;
+    } */
 }
 
 @media screen and (min-width: 768px) {
@@ -1829,6 +1866,7 @@ body {
 
     .home__content {
         padding: 0 1rem;
+        height: 65rem;
         text-align: initial;
     }
 
@@ -1899,6 +1937,12 @@ body {
         -ms-flex-order: -1;
         order: -1;
     }
+
+    /* .social {
+         position: absolute;
+        bottom: -200px;
+        left: 10px;
+    } */
 }
 
 @media screen and (min-width: 968px) {
@@ -1998,4 +2042,10 @@ body {
         -ms-grid-columns: (1fr);
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* .social {
+         position: absolute;
+        bottom: -250px;
+        left: -100px;
+    } */
 }
